@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Vendas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Vendas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <br>
+                <li><a href="clientes.html">Cadastro de Clientes</a></li>
+                <br>
+                <li><a href="produtos.html">Cadastro de Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="formVendas">
+            <label for="produtoVendido">Produto:</label>
+            <input type="text" id="produtoVendido" required>
+            <label for="quantidadeVendida">Quantidade:</label>
+            <input type="number" id="quantidadeVendida" required>
+            <button type="submit">Registrar Venda</button>
+        </form>
+        <div id="vendasRegistradas"></div>
+    </main>
+    <script src="vendas.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <br>
+                <li><a href="produtos.html">Cadastro de Produtos</a></li>
+                <br>
+                <li><a href="vendas.html">Registrar Venda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="formClientes">
+            <label for="nomeCliente">Nome:</label>
+            <input type="text" id="nomeCliente" required>
+            <label for="emailCliente">Email:</label>
+            <input type="email" id="emailCliente" required>
+            <button type="submit">Cadastrar Cliente</button>
+        </form>
+        <div id="clientesCadastrados"></div>
+    </main>
+    <script src="clientes.js"></script>
+</body>
+</html>
